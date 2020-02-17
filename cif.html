@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>CIF</title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			function llr(n){
+				
+			}
+			function h(){
+				var p=document.querySelector("textarea").value;
+				var dos=new Array();
+				var a=new Array();
+				a=p.split(/\n/g);
+				for(var i=0;i<65;i++){
+					dos[i]=0;
+				}
+				for(var i=0;i<a.length;i++){
+					if(a[i]!=" "){
+						if(a[i]!=""){
+							if(a[i][0]>="0"&&a[i][0]<="9"){
+								var ps=parseInt(a[i].slice(0,2));
+								dos[ps]=1;
+							}
+						}
+					}
+					
+				}
+				
+				for(var i=1;i<=60;i++){
+					if(dos[i]==0){
+						document.writeln(i);
+					}
+				}
+				console.log(dos);
+			}
+		</script>
+		<style type="text/css">
+			*{
+				padding: 0;
+				margin: 0;
+			}
+			.top{
+				height: 200px;
+				width: 100%;
+				/*background: red;*/
+				background: url(img/back.webp);
+				background-size: 100% auto;
+				box-shadow: 0 10px 20px #999;
+			}
+			#crg{
+				font-size: 40px;
+			}
+			#crg>span{
+				font-size: 20px;
+			}
+			#intro{
+				padding-top: 10px;
+				font-size: 18px;
+				padding-bottom: 50px;
+			}
+			.main{
+				height: 500px;
+				width: 80%;
+				margin: 0 auto;
+				padding-top: 50px;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="top"></div>
+		<div class="main">
+			<p id="crg">CIF <span>(check-in filter)</span> </p>
+			<p id="intro">这个签到筛选器仅用于日常打卡反选。<br/>Made by Jyx.</p>
+			<div class="sc">
+				复制：<textarea name="" id="" cols="30" rows="10"></textarea>
+				<button onclick="h()">生成</button>
+			</div>
+		</div>
+	</body>
+</html>
