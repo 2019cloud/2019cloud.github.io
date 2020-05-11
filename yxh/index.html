@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			function f(){
+				var p1=document.querySelector("#in1").value;
+				var p2=document.querySelector("#in2").value;
+				var p3=document.querySelector("#in3").value;
+				var p4=document.querySelector("#in4").value;
+				var a="    大家好，我是你们的小编，欢迎来到小编看世界。大家知道"+p1+p2+"是怎么回事吗？让小编带着大家一起来看看吧。";
+				var b="    "+p1+p2+"，这个问题有很多种回答。众所周知，"+p1+p2+"其实就是因为"+p4+"，但是你知道"+p3+"的说法是错的吗？"+"大家可能好奇，为什么"+p1+p2+"呢？但是事实就是这样，小编也感到很惊讶。";
+				var c="    好了，这就是今天关于"+p1+p2+"的内容了，大家有什么想法呢，欢迎在评论区告诉小编！视频的最后，我们来玩一个游戏：用手机九键打出2648，看看你的是什么吧！";
+				var ans=a+" \n "+b+" \n "+c;
+				document.querySelector("textarea").innerHTML=ans;
+				document.querySelector("textarea").style="height: 200px;width: 300px;color:black;"
+			}
+		</script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: rgb(255,255,204);
+			}
+			ul{
+				list-style: none;
+				text-align: center;
+				padding: 50px;
+				position: absolute;
+				left: 50%;
+				top: 20%;
+				margin-left: -350px;
+				background: white;
+				box-shadow: 0 0 20px #999;
+			}
+			ul>li{
+				float: left;
+			}
+			.left input{
+			}
+			#left{
+				width: 300px;
+				margin-right: 50px;
+			}
+			#left,#right{
+				
+			}
+			#left p{
+				font-size: 25px;
+				line-height: 50px;
+				font-weight: bold;
+			}
+			span{
+				color: #aaa;
+			}
+		</style>
+	</head>
+	<body>
+			<ul>
+				<li>
+					<div id="left">
+						<p>营销号文章生成器</p>
+						主体：<input type="text" class="in" id="in1" placeholder="喝水"/><br/>
+						事件：<input type="text" class="in" id="in2" placeholder="不能用耳朵喝"/><br/>
+						错误的说法：<input type="text" class="in" id="in3" placeholder="可以补充水分"/><br/>
+						正确的说法：<input type="text" class="in" id="in4" placeholder="脑子会进水"/>
+						<button onclick="f()">&nbsp;&nbsp;生成&nbsp;&nbsp;</button><br />
+						<span>由shao-qian制作</span>
+					</div>
+				</li>
+				<li>
+					<div id="right">
+						<textarea style="height: 200px;
+				width: 300px;
+				color: rgb(117,117,117);">    大家好，我是你们的小编，欢迎来到小编看世界。大家知道喝水不能用耳朵喝是怎么回事吗？让小编带着大家一起来看看吧。
+     喝水不能用耳朵喝，这个问题有很多种回答。众所周知，喝水不能用耳朵喝其实就是因为脑子会进水，但是你知道可以补充水分是错的吗？大家可能好奇，为什么喝水不能用耳朵喝呢？但是事实就是这样，小编也感到很惊讶。
+     好了，这就是今天关于喝水不能用耳朵喝的内容了，大家有什么想法呢，欢迎在评论区告诉小编！视频的最后，我们来玩一个游戏：用手机九键打出2648，看看你的是什么吧！</textarea>
+					</div>
+				</li>
+			</ul>
+	</body>
+</html>
