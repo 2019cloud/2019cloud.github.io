@@ -1,3 +1,6 @@
+<!--
+	作者：Jyx
+-->
 <!DOCTYPE html>
 <html>
 	<head>
@@ -8,28 +11,42 @@
 				margin: 0;
 				padding: 0;
 			}
+			body{
+				background: rgba(255,198,191,0.3);
+			}
+			.box{
+				height: 90vh;
+				width: 90vw;
+				background: white;
+				margin: 4vh auto;
+				box-shadow: 0px 0px 20px #808080;
+			}
 			h1{
 				font-size: 3vw;
 				text-align: center;
-				margin-top: 3vw;
+				padding-top: 7vh;
 			}
 			hr{
+				height: 3px;
 				width: 80%;
 				margin: 1vh auto;
+				
 			}
 			.left,.right{
 				height: 45vh;
 				width: 25vw;
-				background: cornflowerblue;
+				transition: background-color 0.5s;
+				-moz-transition: background-color 0.5s;
+				-webkit-transition: background-color 0.5s;
+				-o-transition: background-color 0.5s;
 				margin-top: 5%;
 				background: #eee;
 			}
 			.left:hover,.right:hover{
 				height: 45vh;
 				width: 25vw;
-				background: cornflowerblue;
 				margin-top: 5%;
-				background: coral;
+				background: rgb(255,198,191);
 			}
 			.left{
 				float: left;
@@ -76,58 +93,59 @@
 				text-align: center;
 			}
 			h3{
-				font-size: 2vw;
-				color: #808080;
+				font-size: 1.5vw;
+				color: rgb(255,148,136);
 				text-align: center;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>CH 1.1.1 : 更多库。</h1>
-		<h3>made by JYX</h3>
-		<hr />
-		<div class="left">
-			<h2>安装</h2>
-			<ul>
-				<li>
-					<a href="pro/CH V1.0.rar">
-						<p>CH 1.0</p>
-					</a>
-				</li>
-				<li>
-					<a href="pro/CH V1.1.rar">
-						<p>CH 1.1</p>
-					</a>
-				</li>
-				<li>
-					<a href="pro/CH V1.1.1.rar">
-						<p>CH 1.1.1</p>
-					</a>
-				</li>
-			</ul>
-			<div class="button"><a href="#"><p>More</p></a></div>
+		<div class="box">
+			<h1>CH 1.1.1 : 更多库。</h1>
+			<h3>made by JYX</h3>
+			<hr />
+			<div class="left">
+				<h2>安装</h2>
+				<ul>
+					<li>
+						<a href="pro/CH V1.0.rar">
+							<p>CH 1.0</p>
+						</a>
+					</li>
+					<li>
+						<a href="pro/CH V1.1.rar">
+							<p>CH 1.1</p>
+						</a>
+					</li>
+					<li>
+						<a href="pro/CH V1.1.1.rar">
+							<p>CH 1.1.1</p>
+						</a>
+					</li>
+				</ul>
+				<div class="button"><a href="#"><p>More</p></a></div>
+			</div>
+			<div class="right">
+				<h2>下载库</h2>
+				<ul>
+					<li>
+						<a href="#" download="lib/CH-library.txt">
+							<p>CH-library.txt</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" download="lib/CH-userlibrary.txt">
+							<p>CH-userlibrary.txt</p>
+						</a>
+					</li>
+					<li>
+						<a href="#" download="lib/CH-lucky.txt">
+							<p>CH-lucky.txt</p>
+						</a>
+					</li>
+				</ul>
+				<div class="button"><a href="#"><p>More</p></a></div>
+			</div>
 		</div>
-		<div class="right">
-			<h2>下载库</h2>
-			<ul>
-				<li>
-					<a href="#" download="lib/CH-library.txt">
-						<p>CH-library.txt</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" download="lib/CH-userlibrary.txt">
-						<p>CH-userlibrary.txt</p>
-					</a>
-				</li>
-				<li>
-					<a href="#" download="lib/CH-lucky.txt">
-						<p>CH-lucky.txt</p>
-					</a>
-				</li>
-			</ul>
-			<div class="button"><a href="#"><p>More</p></a></div>
-		</div>
-		
 	</body>
 </html>
